@@ -46,7 +46,7 @@
             label2 = new Label();
             en_dec_label = new Label();
             hashit_panel = new System.Windows.Forms.Panel();
-            richTextBox = new RichTextBox();
+            richTextBox1 = new RichTextBox();
             allhashes_btn = new Button();
             hashIt_btn = new Button();
             hashComboBox = new ComboBox();
@@ -74,7 +74,7 @@
             label5.AutoEllipsis = true;
             label5.Font = new Font("Tw Cen MT", 14.25F, FontStyle.Italic, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(3, 0);
+            label5.Location = new Point(3, -3);
             label5.Name = "label5";
             label5.Size = new Size(924, 89);
             label5.TabIndex = 6;
@@ -122,6 +122,7 @@
             button7.TabIndex = 34;
             button7.Text = "Decrypt and Save!";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // privateKeyLabel
             // 
@@ -142,6 +143,7 @@
             button9.TabIndex = 32;
             button9.Text = "Select Private Key!";
             button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
             // 
             // label3
             // 
@@ -195,6 +197,7 @@
             button4.TabIndex = 27;
             button4.Text = "Select Public Key!";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button1
             // 
@@ -205,6 +208,7 @@
             button1.TabIndex = 24;
             button1.Text = "Generate Pair! (Public - Private)";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // storageCheckbox
             // 
@@ -216,6 +220,7 @@
             storageCheckbox.TabIndex = 23;
             storageCheckbox.Text = "Save to Storage";
             storageCheckbox.UseVisualStyleBackColor = true;
+            storageCheckbox.CheckedChanged += storageCheckbox_CheckedChanged;
             // 
             // keySizeValue
             // 
@@ -226,7 +231,7 @@
             keySizeValue.Location = new Point(112, 50);
             keySizeValue.Margin = new Padding(3, 2, 3, 2);
             keySizeValue.Name = "keySizeValue";
-            keySizeValue.Size = new Size(377, 23);
+            keySizeValue.Size = new Size(273, 23);
             keySizeValue.TabIndex = 22;
             keySizeValue.Text = "2048";
             keySizeValue.SelectedIndexChanged += keySizeValue_SelectedIndexChanged;
@@ -256,7 +261,7 @@
             // 
             // hashit_panel
             // 
-            hashit_panel.Controls.Add(richTextBox);
+            hashit_panel.Controls.Add(richTextBox1);
             hashit_panel.Controls.Add(allhashes_btn);
             hashit_panel.Controls.Add(hashIt_btn);
             hashit_panel.Controls.Add(hashComboBox);
@@ -267,15 +272,15 @@
             hashit_panel.Size = new Size(420, 399);
             hashit_panel.TabIndex = 0;
             // 
-            // richTextBox
+            // richTextBox1
             // 
-            richTextBox.Location = new Point(16, 198);
-            richTextBox.Margin = new Padding(3, 2, 3, 2);
-            richTextBox.Name = "richTextBox";
-            richTextBox.ReadOnly = true;
-            richTextBox.Size = new Size(389, 187);
-            richTextBox.TabIndex = 7;
-            richTextBox.Text = "";
+            richTextBox1.Location = new Point(16, 198);
+            richTextBox1.Margin = new Padding(3, 2, 3, 2);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.ReadOnly = true;
+            richTextBox1.Size = new Size(389, 187);
+            richTextBox1.TabIndex = 7;
+            richTextBox1.Text = "";
             // 
             // allhashes_btn
             // 
@@ -286,6 +291,7 @@
             allhashes_btn.TabIndex = 6;
             allhashes_btn.Text = "Generate All Hashes!";
             allhashes_btn.UseVisualStyleBackColor = true;
+            allhashes_btn.Click += allhashes_btn_Click;
             // 
             // hashIt_btn
             // 
@@ -296,6 +302,7 @@
             hashIt_btn.TabIndex = 5;
             hashIt_btn.Text = "Hash It!";
             hashIt_btn.UseVisualStyleBackColor = true;
+            hashIt_btn.Click += hashIt_btn_Click;
             // 
             // hashComboBox
             // 
@@ -371,7 +378,7 @@
         private System.Windows.Forms.Panel hashmain_panel;
         private System.Windows.Forms.Panel en_dec_panel;
         private System.Windows.Forms.Panel hashit_panel;
-        private RichTextBox richTextBox;
+        private RichTextBox richTextBox1;
         private Button allhashes_btn;
         private Button hashIt_btn;
         private ComboBox hashComboBox;

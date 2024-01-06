@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HashWall")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5853b7eb512247b0f19334c2af299754824367c")]
 [assembly: System.Reflection.AssemblyProductAttribute("HashWall")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HashWall")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

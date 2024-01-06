@@ -77,6 +77,7 @@
             button4.TabIndex = 5;
             button4.Text = "Add New Pair";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button1
             // 
@@ -86,6 +87,7 @@
             button1.TabIndex = 6;
             button1.Text = "Delete";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button3
             // 
@@ -95,6 +97,7 @@
             button3.TabIndex = 7;
             button3.Text = "Export Key to New Location";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button2
             // 
@@ -104,6 +107,7 @@
             button2.TabIndex = 8;
             button2.Text = "Open Key Location";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // RSAKeyStoragePage
             // 

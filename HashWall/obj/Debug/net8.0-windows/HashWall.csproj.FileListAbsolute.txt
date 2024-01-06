@@ -22,3 +22,9 @@ C:\Users\Gorke\source\repos\HashWall\HashWall\obj\Debug\net8.0-windows\HashWall.
 C:\Users\Gorke\source\repos\HashWall\HashWall\obj\Debug\net8.0-windows\HashWall.RecentHashesPage.resources
 C:\Users\Gorke\source\repos\HashWall\HashWall\obj\Debug\net8.0-windows\HashWall.RSAKeyStoragePage.resources
 C:\Users\Gorke\source\repos\HashWall\HashWall\obj\Debug\net8.0-windows\HashWall.TextHashingPage.resources
+C:\Users\Gorke\source\repos\HashWall\HashWall\obj\Debug\net8.0-windows\HashWall.sourcelink.json
+C:\Users\Gorke\source\repos\HashWall\HashWall\obj\Debug\net8.0-windows\HashWall.csproj.AssemblyReference.cache
+C:\Users\Gorke\source\repos\HashWall\HashWall\bin\Debug\net8.0-windows\BouncyCastle.Crypto.dll
+C:\Users\Gorke\source\repos\HashWall\HashWall\bin\Debug\net8.0-windows\CsvHelper.dll
+C:\Users\Gorke\source\repos\HashWall\HashWall\bin\Debug\net8.0-windows\HashLib.dll
+C:\Users\Gorke\source\repos\HashWall\HashWall\obj\Debug\net8.0-windows\HashWall.csproj.CopyComplete

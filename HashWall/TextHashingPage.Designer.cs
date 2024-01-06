@@ -31,7 +31,7 @@
             hashInput = new TextBox();
             hashComboBox = new ComboBox();
             button1 = new Button();
-            hashTextResult1 = new TextBox();
+            hashTextResult = new TextBox();
             SuspendLayout();
             // 
             // hashInput
@@ -42,6 +42,7 @@
             hashInput.Name = "hashInput";
             hashInput.Size = new Size(585, 159);
             hashInput.TabIndex = 6;
+            hashInput.TextChanged += hashInput_TextChanged;
             // 
             // hashComboBox
             // 
@@ -63,21 +64,22 @@
             button1.TabIndex = 8;
             button1.Text = "Hash It!";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
-            // hashTextResult1
+            // hashTextResult
             // 
-            hashTextResult1.BackColor = Color.Black;
-            hashTextResult1.BorderStyle = BorderStyle.None;
-            hashTextResult1.Font = new Font("Arial Rounded MT Bold", 11.25F);
-            hashTextResult1.ForeColor = Color.White;
-            hashTextResult1.Location = new Point(96, 364);
-            hashTextResult1.Multiline = true;
-            hashTextResult1.Name = "hashTextResult1";
-            hashTextResult1.ReadOnly = true;
-            hashTextResult1.Size = new Size(585, 134);
-            hashTextResult1.TabIndex = 9;
-            hashTextResult1.TabStop = false;
-            hashTextResult1.Text = "Result:\r\n\r\nHash Type:\r\n\r\n";
+            hashTextResult.BackColor = Color.Black;
+            hashTextResult.BorderStyle = BorderStyle.None;
+            hashTextResult.Font = new Font("Arial Rounded MT Bold", 11.25F);
+            hashTextResult.ForeColor = Color.White;
+            hashTextResult.Location = new Point(96, 364);
+            hashTextResult.Multiline = true;
+            hashTextResult.Name = "hashTextResult";
+            hashTextResult.ReadOnly = true;
+            hashTextResult.Size = new Size(585, 62);
+            hashTextResult.TabIndex = 9;
+            hashTextResult.TabStop = false;
+            hashTextResult.Text = "Result:\r\n\r\nHash Type:\r\n\r\n";
             // 
             // TextHashingPage
             // 
@@ -86,7 +88,7 @@
             BackColor = Color.Black;
             ClientSize = new Size(800, 588);
             ControlBox = false;
-            Controls.Add(hashTextResult1);
+            Controls.Add(hashTextResult);
             Controls.Add(button1);
             Controls.Add(hashComboBox);
             Controls.Add(hashInput);
@@ -103,6 +105,6 @@
         private TextBox hashInput;
         private ComboBox hashComboBox;
         private Button button1;
-        private TextBox hashTextResult1;
+        private TextBox hashTextResult;
     }
 }

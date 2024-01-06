@@ -1,8 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "PUJ1YT/CfYi6IsvQ6OYJL9+ICzP7NNdJePxrE2BZw45MCRmK+faTZvknEjJ7wPNBlHHYqJA63y7nvKfqzoKyRA==",
+  "dgSpecHash": "uMPI2WAtMXVDvn6HyDi3R7dFTPfYaHxlMan35fBE8MRykMCgNgw5RibFUVOswX/lQCoDO8DMpr0UdpKgeyMLrQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Gorke\\source\\repos\\HashWall\\HashWall\\HashWall.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\Gorke\\.nuget\\packages\\bouncycastle.netcore\\2.2.1\\bouncycastle.netcore.2.2.1.nupkg.sha512",
+    "C:\\Users\\Gorke\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",
+    "C:\\Users\\Gorke\\.nuget\\packages\\hashlib\\2.0.1\\hashlib.2.0.1.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "'HashLib 2.0.1' paketi, proje hedef çerçevesi 'net8.0-windows7.0' yerine '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' kullanılarak geri yüklendi. Bu paket projenizle tamamen uyumlu olmayabilir.",
+      "libraryId": "HashLib",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    }
+  ]
 }

@@ -37,7 +37,7 @@
             panel1 = new System.Windows.Forms.Panel();
             panel2 = new System.Windows.Forms.Panel();
             label1 = new Label();
-            label2 = new Label();
+            folderBrowserDialog1 = new FolderBrowserDialog();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -45,11 +45,11 @@
             // homep_label
             // 
             homep_label.AutoSize = true;
-            homep_label.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            homep_label.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 162);
             homep_label.ForeColor = Color.White;
-            homep_label.Location = new Point(336, 46);
+            homep_label.Location = new Point(12, 22);
             homep_label.Name = "homep_label";
-            homep_label.Size = new Size(212, 32);
+            homep_label.Size = new Size(164, 25);
             homep_label.TabIndex = 0;
             homep_label.Text = "Come on, hash it.";
             // 
@@ -59,7 +59,7 @@
             sfile_btn.ForeColor = Color.White;
             sfile_btn.Image = Properties.Resources.file;
             sfile_btn.ImageAlign = ContentAlignment.MiddleLeft;
-            sfile_btn.Location = new Point(146, 166);
+            sfile_btn.Location = new Point(12, 65);
             sfile_btn.Name = "sfile_btn";
             sfile_btn.Size = new Size(173, 58);
             sfile_btn.TabIndex = 1;
@@ -73,7 +73,7 @@
             sfolder_btn.ForeColor = Color.White;
             sfolder_btn.Image = Properties.Resources.folder;
             sfolder_btn.ImageAlign = ContentAlignment.MiddleLeft;
-            sfolder_btn.Location = new Point(606, 166);
+            sfolder_btn.Location = new Point(12, 129);
             sfolder_btn.Name = "sfolder_btn";
             sfolder_btn.Size = new Size(173, 58);
             sfolder_btn.TabIndex = 2;
@@ -87,7 +87,7 @@
             button1.ForeColor = Color.White;
             button1.Image = Properties.Resources.go;
             button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(364, 367);
+            button1.Location = new Point(730, 400);
             button1.Name = "button1";
             button1.Size = new Size(173, 58);
             button1.TabIndex = 3;
@@ -100,10 +100,11 @@
             output_label.AutoSize = true;
             output_label.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
             output_label.ForeColor = Color.White;
-            output_label.Location = new Point(167, 313);
+            output_label.Location = new Point(195, 373);
             output_label.Name = "output_label";
-            output_label.Size = new Size(0, 21);
+            output_label.Size = new Size(47, 21);
             output_label.TabIndex = 4;
+            output_label.Text = "sdfsd";
             output_label.Click += output_label_Click;
             // 
             // helplabel
@@ -121,18 +122,16 @@
             // 
             panel1.Controls.Add(homep_label);
             panel1.Controls.Add(sfolder_btn);
-            panel1.Controls.Add(output_label);
             panel1.Controls.Add(sfile_btn);
+            panel1.Controls.Add(output_label);
             panel1.Controls.Add(button1);
-            panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(927, 588);
+            panel1.Size = new Size(927, 482);
             panel1.TabIndex = 6;
             // 
             // panel2
             // 
-            panel2.Controls.Add(label2);
             panel2.Controls.Add(label1);
             panel2.Controls.Add(helplabel);
             panel2.Dock = DockStyle.Bottom;
@@ -151,15 +150,6 @@
             label1.Size = new Size(63, 21);
             label1.TabIndex = 6;
             label1.Text = "Helper :";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(377, 62);
-            label2.Name = "label2";
-            label2.Size = new Size(38, 15);
-            label2.TabIndex = 7;
-            label2.Text = "label2";
             // 
             // HomePage
             // 
@@ -192,6 +182,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private Label label1;
-        private Label label2;
+        private FolderBrowserDialog folderBrowserDialog1;
     }
 }

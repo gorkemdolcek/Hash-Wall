@@ -52,7 +52,11 @@ namespace HashWall
 
         private void page_panel_Paint(object sender, PaintEventArgs e)
         {
-
+            HomePage homePage = new HomePage();
+            homePage.TopLevel = false;
+            homePage.AutoScroll = true;
+            page_panel.Controls.Add(homePage);
+            homePage.Show();
         }
 
         private void menu_panel_Paint(object sender, PaintEventArgs e)

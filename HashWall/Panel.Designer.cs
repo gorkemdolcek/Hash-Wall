@@ -37,10 +37,8 @@
             home_btn = new Button();
             hashwall_label = new Label();
             page_panel = new System.Windows.Forms.Panel();
-            about_label = new Label();
             menu_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)logo_pictureBox).BeginInit();
-            page_panel.SuspendLayout();
             SuspendLayout();
             // 
             // menu_panel
@@ -130,7 +128,6 @@
             // 
             // page_panel
             // 
-            page_panel.Controls.Add(about_label);
             page_panel.Dock = DockStyle.Fill;
             page_panel.Location = new Point(160, 0);
             page_panel.MinimumSize = new Size(900, 550);
@@ -138,17 +135,6 @@
             page_panel.Size = new Size(927, 588);
             page_panel.TabIndex = 2;
             page_panel.Paint += page_panel_Paint;
-            // 
-            // about_label
-            // 
-            about_label.AutoSize = true;
-            about_label.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            about_label.ForeColor = Color.White;
-            about_label.Location = new Point(43, 45);
-            about_label.Name = "about_label";
-            about_label.Size = new Size(85, 32);
-            about_label.TabIndex = 0;
-            about_label.Text = "About";
             // 
             // Panel
             // 
@@ -165,8 +151,6 @@
             menu_panel.ResumeLayout(false);
             menu_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)logo_pictureBox).EndInit();
-            page_panel.ResumeLayout(false);
-            page_panel.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -180,6 +164,5 @@
         private Button contributors_btn;
         private Button tools_btn;
         private Button home_btn;
-        private Label about_label;
     }
 }
